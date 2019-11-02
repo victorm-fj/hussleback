@@ -8,6 +8,11 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": true
+    "autoOpen": true,
+    "path": "/dashboard",
+    "build": {
+      "backend": "https://hussleback.netlify.com"
+    }
   }
+}
 }
