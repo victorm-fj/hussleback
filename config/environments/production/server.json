@@ -1,7 +1,6 @@
 {
-  "host": "localhost",
-  "port": "${process.env.PORT || 1337}",
-  "production": true,
+  "host": "hussleback.netlify.com",
+  "port": 80,
   "proxy": {
     "enabled": false
   },
@@ -9,6 +8,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false
+    "autoOpen": true
   }
 }
