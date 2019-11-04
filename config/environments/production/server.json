@@ -1,5 +1,5 @@
 {
-  "host": "hussleback.netlify.com",
+  "host": "0.0.0.0",
   "port": 80,
   "proxy": {
     "enabled": false
@@ -8,11 +8,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": true,
-    "path": "/dashboard",
-    "build": {
-      "backend": "https://hussleback.netlify.com"
-    }
+    "autoOpen": true
   }
-}
 }

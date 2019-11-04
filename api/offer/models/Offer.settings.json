@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "offer",
+    "description": "Offer content Type based on @schema.org"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "offeredBy": {
+      "type": "string"
+    },
+    "serialNumber": {
+      "type": "string"
+    },
+    "validFrom": {
+      "type": "date"
+    },
+    "validTo": {
+      "type": "date"
+    },
+    "advanceBookingRequirement": {
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "gtin": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "priceCurrency": {
+      "type": "string"
+    },
+    "itemOffered": {
+      "type": "string"
+    },
+    "Seller": {
+      "type": "string"
+    },
+    "acceptedPaymentMethod": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bodytypes",
+      "handler": "Bodytype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bodytypes/count",
+      "handler": "Bodytype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bodytypes/:id",
+      "handler": "Bodytype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bodytypes",
+      "handler": "Bodytype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bodytypes/:id",
+      "handler": "Bodytype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bodytypes/:id",
+      "handler": "Bodytype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

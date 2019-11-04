@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/geoshapes",
+      "handler": "Geoshape.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geoshapes/count",
+      "handler": "Geoshape.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geoshapes/:id",
+      "handler": "Geoshape.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/geoshapes",
+      "handler": "Geoshape.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/geoshapes/:id",
+      "handler": "Geoshape.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/geoshapes/:id",
+      "handler": "Geoshape.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
