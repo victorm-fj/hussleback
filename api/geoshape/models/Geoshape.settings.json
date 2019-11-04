@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "geoshape",
+    "description": "@schema.org geoshape\nsee https://schema.org/GeoShape"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    }
+  }
+}

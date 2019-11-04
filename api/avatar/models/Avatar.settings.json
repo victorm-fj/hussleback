@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "avatar",
+  "info": {
+    "name": "avatar",
+    "description": "This is a collection of  JSON documents containing configuration information that describes a user's Avatar."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "userId": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "Gender": {
+      "required": true,
+      "enum": [
+        "Male",
+        "Female"
+      ],
+      "type": "enumeration"
+    },
+    "BodyType": {
+      "enum": [
+        "Ectomorph",
+        "Mesomorph",
+        "Endomorph",
+        "Banana",
+        "Apple",
+        "Pear",
+        "HourGlass"
+      ],
+      "type": "enumeration"
+    }
+  }
+}
