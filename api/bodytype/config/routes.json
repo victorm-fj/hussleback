@@ -17,14 +17,6 @@
       }
     },
     {
-      "method": "GET",
-      "path": "/bodytypes/:id",
-      "handler": "Bodytype.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "POST",
       "path": "/bodytypes",
       "handler": "Bodytype.create",
