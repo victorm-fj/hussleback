@@ -1,6 +1,7 @@
 {
-  "host": "localhost",
-  "port": 8080,
+  "host": "0.0.0.0",
+  "port": 1337,
+
   "proxy": {
     "enabled": false
   },
@@ -8,6 +9,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false
+    "autoOpen": true
   }
 }
