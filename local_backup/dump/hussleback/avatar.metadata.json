@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"hussleback.avatar"},{"v":2,"unique":true,"key":{"userId":1},"name":"userId_1","ns":"hussleback.avatar","background":true}],"uuid":"fa16081fb122487aa23c68cac4ba8652"}
