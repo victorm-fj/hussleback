@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Geoshape` model.
+ * Lifecycle callbacks for the `Subcategory` model.
  */
 
 module.exports = {

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/geoshapes",
-      "handler": "Geoshape.find",
+      "path": "/coordinates",
+      "handler": "Coordinates.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/geoshapes/count",
-      "handler": "Geoshape.count",
+      "path": "/coordinates/count",
+      "handler": "Coordinates.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/geoshapes/:id",
-      "handler": "Geoshape.findOne",
+      "path": "/coordinates/:id",
+      "handler": "Coordinates.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/geoshapes",
-      "handler": "Geoshape.create",
+      "path": "/coordinates",
+      "handler": "Coordinates.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/geoshapes/:id",
-      "handler": "Geoshape.update",
+      "path": "/coordinates/:id",
+      "handler": "Coordinates.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/geoshapes/:id",
-      "handler": "Geoshape.delete",
+      "path": "/coordinates/:id",
+      "handler": "Coordinates.delete",
       "config": {
         "policies": []
       }

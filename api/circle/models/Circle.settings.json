@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "geocircle",
+  "info": {
+    "name": "circle",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "coordinates": {
+      "model": "coordinates"
+    },
+    "radius": {
+      "type": "biginteger"
+    }
+  }
+}

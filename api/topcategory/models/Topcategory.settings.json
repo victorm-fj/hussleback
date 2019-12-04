@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "topcategory",
+  "info": {
+    "name": "topcategory",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "subcategories": {
+      "collection": "subcategory",
+      "via": "topcategory"
+    }
+  }
+}

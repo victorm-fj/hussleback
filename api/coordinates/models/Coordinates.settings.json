@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "geoshape",
+  "info": {
+    "name": "coordinates",
+    "description": "coordinates\nsee https://schema.org/coordinates GeoShape  GeoCircle etc."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "elevation": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    }
+  }
+}

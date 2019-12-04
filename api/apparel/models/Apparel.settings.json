@@ -1,0 +1,66 @@
+{
+  "connection": "default",
+  "collectionName": "apparel",
+  "info": {
+    "name": "apparel",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "gender": {
+      "enum": [
+        "male",
+        "female"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "bodytype": {
+      "model": "bodytype"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "brand": {
+      "type": "string",
+      "required": true
+    },
+    "min_level": {
+      "type": "integer",
+      "max": 50,
+      "required": true,
+      "default": "0"
+    },
+    "vector_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "retail_images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "subcategory": {
+      "model": "subcategory"
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    "retail_url": {
+      "type": "string"
+    }
+  }
+}
