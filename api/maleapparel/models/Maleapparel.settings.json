@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "apparel",
   "info": {
-    "name": "apparel",
+    "name": "maleapparel",
     "description": ""
   },
   "options": {
@@ -12,26 +12,8 @@
     ]
   },
   "attributes": {
-    "gender": {
-      "enum": [
-        "male",
-        "female"
-      ],
-      "type": "enumeration",
-      "required": true
-    },
     "price": {
       "type": "decimal",
-      "required": true
-    },
-    "bodytype": {
-      "model": "bodytype"
-    },
-    "desc": {
-      "type": "text"
-    },
-    "brand": {
-      "type": "string",
       "required": true
     },
     "min_level": {
@@ -40,13 +22,13 @@
       "required": true,
       "default": "0"
     },
-    "vector_image": {
+    "Ectomorph": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": true
     },
-    "retail_images": {
+    "Preview_Image": {
       "collection": "file",
       "via": "related",
       "plugin": "upload"
@@ -61,6 +43,22 @@
     },
     "retail_url": {
       "type": "string"
+    },
+    "topcategory": {
+      "model": "topcategory"
+    },
+    "Brand": {
+      "model": "businesses"
+    },
+    "Mesomorph": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Endomorph": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }

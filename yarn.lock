@@ -3285,6 +3285,11 @@ dataloader@^1.4.0:
   resolved "https://registry.yarnpkg.com/dataloader/-/dataloader-1.4.0.tgz#bca11d867f5d3f1b9ed9f737bd15970c65dff5c8"
   integrity sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==
 
+date-fns@^2.8.1:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.9.0.tgz#d0b175a5c37ed5f17b97e2272bbc1fa5aec677d2"
+  integrity sha512-khbFLu/MlzLjEzy9Gh8oY1hNt/Dvxw3J6Rbc28cVoYWQaC1S3YI4xwkF9ZWcjDLscbZlY9hISMr66RFzZagLsA==
+
 debug@*, debug@4.1.1, debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
@@ -10193,6 +10198,18 @@ strapi-utils@3.0.0-beta.17.4:
   dependencies:
     commander "^2.20.0"
     joi-json "^2.1.0"
+    knex "^0.16.5"
+    lodash "^4.17.11"
+    pino "^4.7.1"
+    pluralize "^7.0.0"
+    shelljs "^0.8.3"
+
+strapi-utils@^3.0.0-beta.17.4:
+  version "3.0.0-beta.18.4"
+  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.0-beta.18.4.tgz#916db397c03a81f5b966e11d422d14a1b07f8415"
+  integrity sha512-UYJJ3QG6M/WT2ewu76Kr4Ffq2bP6fuouqDF8MZ14pAfveZkQ31ygTo0pmNs5/wACddg6wLHC1q2t/evEkznheg==
+  dependencies:
+    date-fns "^2.8.1"
     knex "^0.16.5"
     lodash "^4.17.11"
     pino "^4.7.1"

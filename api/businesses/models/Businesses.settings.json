@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "businesses",
+  "info": {
+    "name": "businesses",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "BusinessName": {
+      "type": "string"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "email": {
+      "type": "email"
+    },
+    "BusinessAddress": {
+      "type": "string"
+    },
+    "LocationNumber": {
+      "type": "integer"
+    },
+    "website": {
+      "type": "string"
+    },
+    "SupervisorName": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "integer"
+    },
+    "City": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "ZipCode": {
+      "type": "string"
+    }
+  }
+}
