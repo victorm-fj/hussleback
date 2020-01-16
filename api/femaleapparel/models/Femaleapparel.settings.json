@@ -1,0 +1,59 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "femaleapparel",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "Min_Level": {
+      "type": "integer"
+    },
+    "Retail_url": {
+      "type": "string"
+    },
+    "Brand": {
+      "model": "businesses"
+    },
+    "topcategory": {
+      "model": "topcategory"
+    },
+    "subcategory": {
+      "model": "subcategory"
+    },
+    "Apple": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Banana": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Pear": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Hour_Glass": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Preview_Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

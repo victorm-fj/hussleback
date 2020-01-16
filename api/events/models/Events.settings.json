@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "events",
+  "info": {
+    "name": "events",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "EventName": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "StartDate": {
+      "type": "date"
+    },
+    "EndDate": {
+      "type": "date"
+    },
+    "Price": {
+      "type": "decimal",
+      "default": "0"
+    },
+    "Adress": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Itinerary": {
+      "type": "text"
+    },
+    "Business": {
+      "model": "businesses"
+    },
+    "Buy_Tickets_url": {
+      "type": "string"
+    }
+  }
+}

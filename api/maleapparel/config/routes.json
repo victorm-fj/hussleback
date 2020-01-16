@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/maleapparels",
+      "handler": "Maleapparel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/maleapparels/count",
+      "handler": "Maleapparel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/maleapparels/:id",
+      "handler": "Maleapparel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/maleapparels",
+      "handler": "Maleapparel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/maleapparels/:id",
+      "handler": "Maleapparel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/maleapparels/:id",
+      "handler": "Maleapparel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
