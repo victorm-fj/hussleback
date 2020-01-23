@@ -12,16 +12,16 @@
     ]
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
     "Price": {
+      "type": "decimal"
+    },
+    "min_level": {
       "type": "integer"
     },
-    "Min_Level": {
-      "type": "integer"
-    },
-    "Retail_url": {
+    "retail_url": {
       "type": "string"
     },
     "Apple": {
