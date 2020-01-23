@@ -12,7 +12,7 @@
     ]
   },
   "attributes": {
-    "price": {
+    "Price": {
       "type": "decimal",
       "required": true
     },
@@ -33,9 +33,6 @@
       "via": "related",
       "plugin": "upload"
     },
-    "subcategory": {
-      "model": "subcategory"
-    },
     "name": {
       "type": "string",
       "default": "",
@@ -43,12 +40,6 @@
     },
     "retail_url": {
       "type": "string"
-    },
-    "topcategory": {
-      "model": "topcategory"
-    },
-    "Brand": {
-      "model": "businesses"
     },
     "Mesomorph": {
       "model": "file",
@@ -59,6 +50,15 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "Brand": {
+      "model": "businesses"
+    },
+    "subcategory": {
+      "model": "subcategoryapparel"
+    },
+    "topcategory": {
+      "model": "topcategoryapparels"
     }
   }
 }

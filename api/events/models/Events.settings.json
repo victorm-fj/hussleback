@@ -39,11 +39,11 @@
     "Itinerary": {
       "type": "text"
     },
-    "Business": {
-      "model": "businesses"
-    },
     "Buy_Tickets_url": {
       "type": "string"
+    },
+    "Business": {
+      "model": "businesses"
     }
   }
 }

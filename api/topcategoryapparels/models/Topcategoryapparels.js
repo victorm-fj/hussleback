@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Topcategory` model.
+ * Lifecycle callbacks for the `Topcategoryapparels` model.
  */
 
 module.exports = {

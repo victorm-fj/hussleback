@@ -46,6 +46,27 @@
     },
     "ZipCode": {
       "type": "string"
+    },
+    "Longitude": {
+      "type": "decimal"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "QR_Code": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Business_Type": {
+      "enum": [
+        "Clothing_Brand",
+        "Retail_Establishment"
+      ],
+      "type": "enumeration"
+    },
+    "Geolocation_Polygon": {
+      "type": "json"
     }
   }
 }

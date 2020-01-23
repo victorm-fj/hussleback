@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/subcategories",
-      "handler": "Subcategory.find",
+      "path": "/topcategoryapparels",
+      "handler": "Topcategoryapparels.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/subcategories/count",
-      "handler": "Subcategory.count",
+      "path": "/topcategoryapparels/count",
+      "handler": "Topcategoryapparels.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/subcategories/:id",
-      "handler": "Subcategory.findOne",
+      "path": "/topcategoryapparels/:id",
+      "handler": "Topcategoryapparels.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/subcategories",
-      "handler": "Subcategory.create",
+      "path": "/topcategoryapparels",
+      "handler": "Topcategoryapparels.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/subcategories/:id",
-      "handler": "Subcategory.update",
+      "path": "/topcategoryapparels/:id",
+      "handler": "Topcategoryapparels.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/subcategories/:id",
-      "handler": "Subcategory.delete",
+      "path": "/topcategoryapparels/:id",
+      "handler": "Topcategoryapparels.delete",
       "config": {
         "policies": []
       }

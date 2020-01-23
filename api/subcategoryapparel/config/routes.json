@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subcategoryapparels",
+      "handler": "Subcategoryapparel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subcategoryapparels/count",
+      "handler": "Subcategoryapparel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subcategoryapparels/:id",
+      "handler": "Subcategoryapparel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subcategoryapparels",
+      "handler": "Subcategoryapparel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subcategoryapparels/:id",
+      "handler": "Subcategoryapparel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subcategoryapparels/:id",
+      "handler": "Subcategoryapparel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

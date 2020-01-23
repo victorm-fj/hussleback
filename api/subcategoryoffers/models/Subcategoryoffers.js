@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Subcategory` model.
+ * Lifecycle callbacks for the `Subcategoryoffers` model.
  */
 
 module.exports = {
