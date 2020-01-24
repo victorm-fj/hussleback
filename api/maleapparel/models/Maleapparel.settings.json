@@ -12,7 +12,7 @@
     ]
   },
   "attributes": {
-    "Price": {
+    "price": {
       "type": "decimal",
       "required": true
     },

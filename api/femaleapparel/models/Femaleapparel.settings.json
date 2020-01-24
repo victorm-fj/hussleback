@@ -15,7 +15,7 @@
     "name": {
       "type": "string"
     },
-    "Price": {
+    "price": {
       "type": "decimal"
     },
     "min_level": {
