@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "subcategoryoffers",
+  "info": {
+    "name": "subcategoryoffers",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "topcategoryoffer": {
+      "model": "topcategoryoffers",
+      "via": "subcategoryoffers"
+    }
+  }
+}

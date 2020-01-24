@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "topcategory",
   "info": {
-    "name": "topcategory",
+    "name": "topcategoryapparels",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
       "type": "string"
     },
     "subcategories": {
-      "collection": "subcategory",
+      "collection": "subcategoryapparel",
       "via": "topcategory"
     }
   }

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/topcategories",
-      "handler": "Topcategory.find",
+      "path": "/subcategoryoffers",
+      "handler": "Subcategoryoffers.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/topcategories/count",
-      "handler": "Topcategory.count",
+      "path": "/subcategoryoffers/count",
+      "handler": "Subcategoryoffers.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/topcategories/:id",
-      "handler": "Topcategory.findOne",
+      "path": "/subcategoryoffers/:id",
+      "handler": "Subcategoryoffers.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/topcategories",
-      "handler": "Topcategory.create",
+      "path": "/subcategoryoffers",
+      "handler": "Subcategoryoffers.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/topcategories/:id",
-      "handler": "Topcategory.update",
+      "path": "/subcategoryoffers/:id",
+      "handler": "Subcategoryoffers.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/topcategories/:id",
-      "handler": "Topcategory.delete",
+      "path": "/subcategoryoffers/:id",
+      "handler": "Subcategoryoffers.delete",
       "config": {
         "policies": []
       }

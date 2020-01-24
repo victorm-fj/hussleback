@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/topcategoryoffers",
+      "handler": "Topcategoryoffers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/topcategoryoffers/count",
+      "handler": "Topcategoryoffers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/topcategoryoffers/:id",
+      "handler": "Topcategoryoffers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/topcategoryoffers",
+      "handler": "Topcategoryoffers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/topcategoryoffers/:id",
+      "handler": "Topcategoryoffers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/topcategoryoffers/:id",
+      "handler": "Topcategoryoffers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

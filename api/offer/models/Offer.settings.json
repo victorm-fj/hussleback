@@ -1,17 +1,17 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "offer",
   "info": {
     "name": "offer",
     "description": "Offer content Type based on @schema.org"
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
-    "offeredBy": {
-      "type": "string"
-    },
     "serialNumber": {
       "type": "string"
     },
@@ -35,20 +35,20 @@
     "sku": {
       "type": "string"
     },
-    "price": {
+    "Real_Price": {
       "type": "decimal"
-    },
-    "priceCurrency": {
-      "type": "string"
-    },
-    "itemOffered": {
-      "type": "string"
-    },
-    "Seller": {
-      "type": "string"
     },
     "acceptedPaymentMethod": {
       "type": "string"
+    },
+    "Fit_Coin_Price": {
+      "type": "integer"
+    },
+    "One_Time_Offer": {
+      "type": "boolean"
+    },
+    "BusinessName": {
+      "model": "businesses"
     }
   }
 }

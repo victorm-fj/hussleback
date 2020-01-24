@@ -1,34 +1,28 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "femaleapparel",
   "info": {
     "name": "femaleapparel",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
     "Price": {
+      "type": "decimal"
+    },
+    "min_level": {
       "type": "integer"
     },
-    "Min_Level": {
-      "type": "integer"
-    },
-    "Retail_url": {
+    "retail_url": {
       "type": "string"
-    },
-    "Brand": {
-      "model": "businesses"
-    },
-    "topcategory": {
-      "model": "topcategory"
-    },
-    "subcategory": {
-      "model": "subcategory"
     },
     "Apple": {
       "model": "file",
@@ -51,9 +45,18 @@
       "plugin": "upload"
     },
     "Preview_Image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "Brand": {
+      "model": "businesses"
+    },
+    "subcategory": {
+      "model": "subcategoryapparel"
+    },
+    "topcategory": {
+      "model": "topcategoryapparels"
     }
   }
 }
