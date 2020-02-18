@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/femalehatsandhairs",
+      "handler": "Femalehatsandhairs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/femalehatsandhairs/count",
+      "handler": "Femalehatsandhairs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/femalehatsandhairs/:id",
+      "handler": "Femalehatsandhairs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/femalehatsandhairs",
+      "handler": "Femalehatsandhairs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/femalehatsandhairs/:id",
+      "handler": "Femalehatsandhairs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/femalehatsandhairs/:id",
+      "handler": "Femalehatsandhairs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
