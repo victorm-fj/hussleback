@@ -24,9 +24,6 @@
     "Retail_Url": {
       "type": "string"
     },
-    "Brand": {
-      "model": "businesses"
-    },
     "Topcategory": {
       "model": "topcategoryapparels"
     },
@@ -92,6 +89,9 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "Brand": {
+      "model": "businesses"
     }
   }
 }

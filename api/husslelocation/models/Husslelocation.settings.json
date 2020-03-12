@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "businesses",
+  "collectionName": "husslelocation",
   "info": {
-    "name": "businesses",
+    "name": "husslelocation",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
     ]
   },
   "attributes": {
-    "BusinessName": {
+    "Name": {
       "type": "string"
     },
     "Logo": {
@@ -20,19 +20,16 @@
       "via": "related",
       "plugin": "upload"
     },
-    "email": {
+    "Email": {
       "type": "email"
     },
-    "BusinessAddress": {
+    "LocationAddress": {
       "type": "string"
     },
     "LocationNumber": {
       "type": "integer"
     },
-    "website": {
-      "type": "string"
-    },
-    "SupervisorName": {
+    "Website": {
       "type": "string"
     },
     "PhoneNumber": {
@@ -45,44 +42,32 @@
       "type": "string"
     },
     "ZipCode": {
-      "type": "string"
+      "type": "integer"
     },
     "Longitude": {
-      "type": "decimal"
+      "type": "integer"
     },
-    "latitude": {
-      "type": "decimal"
-    },
-    "QR_Code": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "Business_Type": {
-      "enum": [
-        "Clothing_Brand",
-        "Retail_Establishment"
-      ],
-      "type": "enumeration"
+    "Latitude": {
+      "type": "integer"
     },
     "Geolocation_Polygon": {
       "type": "json"
     },
-    "Business_TopCategory": {
+    "Location_TopCategory": {
       "model": "topcategoryoffers"
     },
-    "Business_SubCategory": {
+    "Location_SubCategory": {
       "model": "subcategoryoffers"
     },
     "Location_Bonus": {
       "type": "integer"
     },
-    "workoutypes": {
+    "Workoutypes": {
       "collection": "workoutypes",
-      "via": "businesses",
+      "via": "husslelocations",
       "dominant": true
     },
-    "Business_Picture": {
+    "Location_Picture": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
