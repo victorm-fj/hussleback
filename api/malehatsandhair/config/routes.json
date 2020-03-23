@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/malehatsandhairs",
+      "handler": "Malehatsandhair.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/malehatsandhairs/count",
+      "handler": "Malehatsandhair.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/malehatsandhairs/:id",
+      "handler": "Malehatsandhair.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/malehatsandhairs",
+      "handler": "Malehatsandhair.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/malehatsandhairs/:id",
+      "handler": "Malehatsandhair.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/malehatsandhairs/:id",
+      "handler": "Malehatsandhair.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

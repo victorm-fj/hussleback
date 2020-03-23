@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/workoutypes",
+      "handler": "Workoutypes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workoutypes/count",
+      "handler": "Workoutypes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workoutypes/:id",
+      "handler": "Workoutypes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/workoutypes",
+      "handler": "Workoutypes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/workoutypes/:id",
+      "handler": "Workoutypes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/workoutypes/:id",
+      "handler": "Workoutypes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/husslelocations",
+      "handler": "Husslelocation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/husslelocations/count",
+      "handler": "Husslelocation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/husslelocations/:id",
+      "handler": "Husslelocation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/husslelocations",
+      "handler": "Husslelocation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/husslelocations/:id",
+      "handler": "Husslelocation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/husslelocations/:id",
+      "handler": "Husslelocation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -51,14 +51,14 @@
       "via": "related",
       "plugin": "upload"
     },
-    "Brand": {
-      "model": "businesses"
-    },
     "subcategory": {
       "model": "subcategoryapparel"
     },
     "topcategory": {
       "model": "topcategoryapparels"
+    },
+    "Brand": {
+      "model": "businesses"
     }
   }
 }

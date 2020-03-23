@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "workoutypes",
+  "info": {
+    "name": "workoutypes",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Requires_Heart_Rate_Device": {
+      "type": "boolean"
+    },
+    "businesses": {
+      "collection": "businesses",
+      "via": "workoutypes"
+    },
+    "husslelocations": {
+      "collection": "husslelocation",
+      "via": "Workoutypes"
+    }
+  }
+}

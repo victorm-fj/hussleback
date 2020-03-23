@@ -1,0 +1,97 @@
+{
+  "connection": "default",
+  "collectionName": "femalehatsandhairs",
+  "info": {
+    "name": "femalehatsandhairs",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "Min_Level": {
+      "type": "integer"
+    },
+    "Retail_Url": {
+      "type": "string"
+    },
+    "Topcategory": {
+      "model": "topcategoryapparels"
+    },
+    "Subcategory": {
+      "model": "subcategoryapparel"
+    },
+    "Front_Black": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Back_Black": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Black_Preview": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Front_Brown": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Back_Brown": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Brown_Preview": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Front_Red": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Back_Red": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Red_Preview": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Front_Blonde": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Back_Blonde": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Blonde_Preview": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Brand": {
+      "model": "businesses"
+    }
+  }
+}
