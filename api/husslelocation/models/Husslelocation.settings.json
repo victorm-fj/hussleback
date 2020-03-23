@@ -45,10 +45,10 @@
       "type": "integer"
     },
     "Longitude": {
-      "type": "integer"
+      "type": "float"
     },
     "Latitude": {
-      "type": "integer"
+      "type": "float"
     },
     "Geolocation_Polygon": {
       "type": "json"

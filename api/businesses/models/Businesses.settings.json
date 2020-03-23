@@ -48,22 +48,15 @@
       "type": "string"
     },
     "Longitude": {
-      "type": "decimal"
+      "type": "float"
     },
     "latitude": {
-      "type": "decimal"
+      "type": "float"
     },
     "QR_Code": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
-    },
-    "Business_Type": {
-      "enum": [
-        "Clothing_Brand",
-        "Retail_Establishment"
-      ],
-      "type": "enumeration"
     },
     "Geolocation_Polygon": {
       "type": "json"
@@ -86,6 +79,9 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "Clothing_Brand": {
+      "type": "boolean"
     }
   }
 }

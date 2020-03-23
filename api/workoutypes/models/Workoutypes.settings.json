@@ -23,13 +23,13 @@
     "Requires_Heart_Rate_Device": {
       "type": "boolean"
     },
-    "husslelocations": {
-      "collection": "husslelocation",
-      "via": "Workoutypes"
-    },
     "businesses": {
       "collection": "businesses",
       "via": "workoutypes"
+    },
+    "husslelocations": {
+      "collection": "husslelocation",
+      "via": "Workoutypes"
     }
   }
 }
