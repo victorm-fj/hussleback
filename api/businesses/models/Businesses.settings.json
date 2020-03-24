@@ -70,11 +70,6 @@
     "Location_Bonus": {
       "type": "integer"
     },
-    "workoutypes": {
-      "collection": "workoutypes",
-      "via": "businesses",
-      "dominant": true
-    },
     "Business_Picture": {
       "model": "file",
       "via": "related",
@@ -82,6 +77,11 @@
     },
     "Clothing_Brand": {
       "type": "boolean"
+    },
+    "workoutypes": {
+      "collection": "workoutypes",
+      "dominant": true,
+      "via": "businesses"
     }
   }
 }

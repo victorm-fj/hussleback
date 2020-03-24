@@ -15,7 +15,7 @@
     "Name": {
       "type": "string"
     },
-    "Logo": {
+    "Icon": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
@@ -30,6 +30,11 @@
     "husslelocations": {
       "collection": "husslelocation",
       "via": "Workoutypes"
+    },
+    "Circle_Icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }

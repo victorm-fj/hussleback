@@ -62,15 +62,15 @@
     "Location_Bonus": {
       "type": "integer"
     },
-    "Workoutypes": {
-      "collection": "workoutypes",
-      "via": "husslelocations",
-      "dominant": true
-    },
     "Location_Picture": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "Workoutypes": {
+      "collection": "workoutypes",
+      "dominant": true,
+      "via": "husslelocations"
     }
   }
 }
