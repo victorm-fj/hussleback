@@ -21,10 +21,7 @@
     "validTo": {
       "type": "date"
     },
-    "advanceBookingRequirement": {
-      "type": "boolean"
-    },
-    "image": {
+    "Coupon_Image": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
@@ -35,12 +32,6 @@
     "sku": {
       "type": "string"
     },
-    "Real_Price": {
-      "type": "decimal"
-    },
-    "acceptedPaymentMethod": {
-      "type": "string"
-    },
     "Fit_Coin_Price": {
       "type": "integer"
     },
@@ -49,6 +40,72 @@
     },
     "BusinessName": {
       "model": "businesses"
+    },
+    "CategoryTypes": {
+      "collection": "topcategoryoffers"
+    },
+    "OfferDetails_and_Disclaimers": {
+      "type": "text"
+    },
+    "Online_Offer": {
+      "type": "boolean"
+    },
+    "Online_Discount_Code": {
+      "type": "string"
+    },
+    "Discount_Barcode_Number": {
+      "type": "biginteger"
+    },
+    "Barcode_Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Redemption_Verification_Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Discount_Type": {
+      "enum": [
+        "PercentageOffSpecificProduct",
+        "PercentageOffTotalSale",
+        "PercentageOffEveryProduct",
+        "DollarAmountOffSpecificProduct",
+        "DollarAmountOffTotalSale",
+        "DollarAmountOffEveryProduct",
+        "BuyOneGetOneFree",
+        "BuyOneGetOneHalfOff",
+        "DollarAmountOffWhenYouSpendCertainAmount",
+        "PercentOffWhenYouSpendCertainAmount"
+      ],
+      "type": "enumeration"
+    },
+    "Offer_Name": {
+      "type": "string"
+    },
+    "Discount_Dollar_Amount": {
+      "type": "decimal"
+    },
+    "Discount_Percentage_Amount": {
+      "type": "integer"
+    },
+    "Accepts_Cash": {
+      "type": "boolean"
+    },
+    "Accepts_Debit_Credit_Cards": {
+      "type": "boolean"
+    },
+    "Accepts_Apple_Pay": {
+      "type": "boolean"
+    },
+    "Required_Payment_Method": {
+      "enum": [
+        "DoesNotMatter",
+        "Cash",
+        "DebitOrCreditCard"
+      ],
+      "type": "enumeration"
     }
   }
 }

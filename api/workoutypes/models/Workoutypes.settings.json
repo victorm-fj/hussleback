@@ -23,10 +23,6 @@
     "Requires_Heart_Rate_Device": {
       "type": "boolean"
     },
-    "businesses": {
-      "collection": "businesses",
-      "via": "workoutypes"
-    },
     "husslelocations": {
       "collection": "husslelocation",
       "via": "Workoutypes"
@@ -35,6 +31,10 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "businesses": {
+      "collection": "businesses",
+      "via": "workoutypes"
     }
   }
 }

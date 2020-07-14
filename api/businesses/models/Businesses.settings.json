@@ -64,13 +64,10 @@
     "Business_TopCategory": {
       "model": "topcategoryoffers"
     },
-    "Business_SubCategory": {
-      "model": "subcategoryoffers"
-    },
     "Location_Bonus": {
       "type": "integer"
     },
-    "Business_Picture": {
+    "HussleMap_Picture": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
@@ -80,8 +77,16 @@
     },
     "workoutypes": {
       "collection": "workoutypes",
-      "dominant": true,
-      "via": "businesses"
+      "via": "businesses",
+      "dominant": true
+    },
+    "Photo_Ads": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Online_Offers_Business": {
+      "type": "boolean"
     }
   }
 }
