@@ -11,10 +11,6 @@
   "attributes": {
     "Name": {
       "type": "string"
-    },
-    "subcategoryoffers": {
-      "collection": "subcategoryoffers",
-      "via": "topcategoryoffer"
     }
   }
 }

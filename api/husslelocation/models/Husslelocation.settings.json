@@ -56,9 +56,6 @@
     "Location_TopCategory": {
       "model": "topcategoryoffers"
     },
-    "Location_SubCategory": {
-      "model": "subcategoryoffers"
-    },
     "Location_Bonus": {
       "type": "integer"
     },
