@@ -15,7 +15,7 @@
     "name": {
       "type": "string"
     },
-    "price": {
+    "Fit_Coin_Price": {
       "type": "decimal"
     },
     "min_level": {
@@ -57,6 +57,14 @@
     },
     "Brand": {
       "model": "businesses"
+    },
+    "Retail_Product_Images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Retail_Price": {
+      "type": "decimal"
     }
   }
 }

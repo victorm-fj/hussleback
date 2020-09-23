@@ -15,8 +15,8 @@
     "Name": {
       "type": "string"
     },
-    "Price": {
-      "type": "integer"
+    "Fit_Coin_Price": {
+      "type": "decimal"
     },
     "Min_Level": {
       "type": "integer"
@@ -92,6 +92,29 @@
     },
     "Brand": {
       "model": "businesses"
+    },
+    "Retail_Product_Images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Retail_Price": {
+      "type": "decimal"
+    },
+    "Front_White": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Back_White": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "White_Preview": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
