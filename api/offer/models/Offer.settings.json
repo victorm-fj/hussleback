@@ -106,6 +106,9 @@
         "DebitOrCreditCard"
       ],
       "type": "enumeration"
+    },
+    "Online_Discount_Weblink": {
+      "type": "string"
     }
   }
 }

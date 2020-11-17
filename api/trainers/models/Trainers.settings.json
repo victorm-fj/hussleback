@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "trainers",
+  "info": {
+    "name": "trainers",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "First_Name": {
+      "type": "string"
+    },
+    "Last_Name": {
+      "type": "string"
+    },
+    "Date_Of_Birth": {
+      "type": "date"
+    },
+    "Profile_Picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "WorkoutSpecialties": {
+      "collection": "workoutypes",
+      "via": "Trainers"
+    },
+    "Clients": {
+      "collection": "applicationusers"
+    }
+  }
+}

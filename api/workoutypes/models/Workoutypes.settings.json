@@ -35,6 +35,10 @@
     "businesses": {
       "collection": "businesses",
       "via": "workoutypes"
+    },
+    "Trainers": {
+      "model": "trainers",
+      "via": "WorkoutSpecialties"
     }
   }
 }
