@@ -32,13 +32,13 @@
       "via": "related",
       "plugin": "upload"
     },
-    "businesses": {
-      "collection": "businesses",
-      "via": "workoutypes"
-    },
     "Trainers": {
       "model": "trainers",
       "via": "WorkoutSpecialties"
+    },
+    "businesses": {
+      "collection": "businesses",
+      "via": "workoutypes"
     }
   }
 }

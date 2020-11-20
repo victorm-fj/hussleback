@@ -38,9 +38,6 @@
     "One_Time_Offer": {
       "type": "boolean"
     },
-    "BusinessName": {
-      "model": "businesses"
-    },
     "CategoryTypes": {
       "collection": "topcategoryoffers"
     },
@@ -109,6 +106,9 @@
     },
     "Online_Discount_Weblink": {
       "type": "string"
+    },
+    "BusinessName": {
+      "model": "businesses"
     }
   }
 }

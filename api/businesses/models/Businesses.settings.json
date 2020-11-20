@@ -91,6 +91,9 @@
     "Business": {
       "model": "advertisements",
       "via": "advertisements"
+    },
+    "qrCodeUniqueVerifyInfo": {
+      "type": "string"
     }
   }
 }

@@ -25,12 +25,12 @@
     "Link_URL": {
       "type": "string"
     },
+    "Ad_Description": {
+      "type": "text"
+    },
     "advertisements": {
       "collection": "businesses",
       "via": "Business"
-    },
-    "Ad_Description": {
-      "type": "text"
     }
   }
 }
