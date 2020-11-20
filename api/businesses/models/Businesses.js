@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Lifecycle callbacks for the `Businesses` model.
@@ -34,7 +34,9 @@ module.exports = {
 
   // After creating a value.
   // Fired after an `insert` query.
-  // afterCreate: async (model, result) => {},
+  afterCreate: async (model, result) => {
+    await strapi.services.businesses.createQRCode(model.id);
+  },
 
   // Before updating a value.
   // Fired before an `update` query.
