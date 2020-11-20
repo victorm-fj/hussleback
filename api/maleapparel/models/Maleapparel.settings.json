@@ -57,9 +57,6 @@
     "topcategory": {
       "model": "topcategoryapparels"
     },
-    "Brand": {
-      "model": "businesses"
-    },
     "Retail_Product_Images": {
       "collection": "file",
       "via": "related",
@@ -67,6 +64,9 @@
     },
     "Retail_Price": {
       "type": "decimal"
+    },
+    "Brand": {
+      "model": "businesses"
     }
   }
 }

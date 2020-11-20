@@ -90,9 +90,6 @@
       "via": "related",
       "plugin": "upload"
     },
-    "Brand": {
-      "model": "businesses"
-    },
     "Retail_Product_Images": {
       "collection": "file",
       "via": "related",
@@ -115,6 +112,9 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "Brand": {
+      "model": "businesses"
     }
   }
 }

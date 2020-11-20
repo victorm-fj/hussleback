@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "applicationusers",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Username": {
+      "type": "string"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "Trainer": {
+      "model": "trainers"
+    }
+  }
+}

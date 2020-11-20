@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "advertisements",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Ad_Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Link_Text": {
+      "required": true,
+      "type": "string"
+    },
+    "Link_URL": {
+      "type": "string"
+    },
+    "Ad_Description": {
+      "type": "text"
+    },
+    "advertisements": {
+      "collection": "businesses",
+      "via": "Business"
+    }
+  }
+}

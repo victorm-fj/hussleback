@@ -87,6 +87,13 @@
     },
     "Online_Offers_Business": {
       "type": "boolean"
+    },
+    "Business": {
+      "model": "advertisements",
+      "via": "advertisements"
+    },
+    "qrCodeUniqueVerifyInfo": {
+      "type": "string"
     }
   }
 }

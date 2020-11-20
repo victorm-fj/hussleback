@@ -32,6 +32,10 @@
       "via": "related",
       "plugin": "upload"
     },
+    "Trainers": {
+      "model": "trainers",
+      "via": "WorkoutSpecialties"
+    },
     "businesses": {
       "collection": "businesses",
       "via": "workoutypes"
