@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/challengesandachievements",
+      "handler": "Challengesandachievements.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/challengesandachievements/count",
+      "handler": "Challengesandachievements.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/challengesandachievements/:id",
+      "handler": "Challengesandachievements.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/challengesandachievements",
+      "handler": "Challengesandachievements.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/challengesandachievements/:id",
+      "handler": "Challengesandachievements.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/challengesandachievements/:id",
+      "handler": "Challengesandachievements.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
