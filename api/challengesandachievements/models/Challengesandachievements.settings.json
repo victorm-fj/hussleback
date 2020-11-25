@@ -1,0 +1,68 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "challengesandachievements",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Challenge_Name": {
+      "type": "string"
+    },
+    "Personal_Challenge": {
+      "type": "boolean"
+    },
+    "Monthly_Challenge": {
+      "type": "boolean"
+    },
+    "Metric_Being_Measured": {
+      "enum": [
+        "Steps",
+        "Calories_Burned",
+        "Miles",
+        "Fit_Points",
+        "Fit_Coins",
+        "Logged_Workouts",
+        "Logged_Steps",
+        "Logged_Calories_Burned",
+        "Logged_Walking_Miles",
+        "Logged_Running_Miles",
+        "Logged_Biking_Miles"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "Challenge_Goal_Quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "Challenge_Timeframe": {
+      "enum": [
+        "Daily_Goal",
+        "Weekly_Goal",
+        "Monthly_Goal",
+        "No_Timeframe"
+      ],
+      "type": "enumeration"
+    },
+    "Goal_Description": {
+      "type": "text"
+    },
+    "Monthly_Challenge_Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Achievement_Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "FitCoin_Reward": {
+      "type": "integer"
+    }
+  }
+}
