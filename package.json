@@ -11,6 +11,8 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "aws-sdk": "^2.804.0",
+    "moment": "^2.29.1",
     "qrcode": "^1.4.4",
     "strapi": "3.0.0-beta.17.4",
     "strapi-admin": "3.0.0-beta.17.4",

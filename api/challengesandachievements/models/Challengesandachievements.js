@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Lifecycle callbacks for the `Challengesandachievements` model.
@@ -34,7 +34,11 @@ module.exports = {
 
   // After creating a value.
   // Fired after an `insert` query.
-  // afterCreate: async (model, result) => {},
+  afterCreate: async (model, result) => {
+    await strapi.services.challengesandachievements.saveChallengeInDynamoDB(
+      model.toObject()
+    );
+  },
 
   // Before updating a value.
   // Fired before an `update` query.
@@ -42,7 +46,11 @@ module.exports = {
 
   // After updating a value.
   // Fired after an `update` query.
-  // afterUpdate: async (model, result) => {},
+  afterUpdate: async (model, result, p) => {
+    await strapi.services.challengesandachievements.updateChallengeInDynamoDB(
+      model._update["$set"]
+    );
+  },
 
   // Before destroying a value.
   // Fired before a `delete` query.
