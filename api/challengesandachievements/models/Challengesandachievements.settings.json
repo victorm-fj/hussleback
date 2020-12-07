@@ -1,22 +1,27 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "challengesandachievements",
   "info": {
     "name": "challengesandachievements",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "Challenge_Name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Personal_Challenge": {
       "type": "boolean"
     },
     "Monthly_Challenge": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "Metric_Being_Measured": {
       "enum": [
@@ -46,7 +51,8 @@
         "Monthly_Goal",
         "No_Timeframe"
       ],
-      "type": "enumeration"
+      "type": "enumeration",
+      "required": true
     },
     "Goal_Description": {
       "type": "text"
@@ -62,7 +68,8 @@
       "plugin": "upload"
     },
     "FitCoin_Reward": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     }
   }
 }
