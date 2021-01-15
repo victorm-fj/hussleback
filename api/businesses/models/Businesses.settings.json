@@ -94,6 +94,12 @@
     },
     "qrCodeUniqueVerifyInfo": {
       "type": "string"
+    },
+    "BonusTimer_Minutes": {
+      "type": "integer"
+    },
+    "Location_Radius_Feet": {
+      "type": "integer"
     }
   }
 }
