@@ -23,10 +23,6 @@
     "Requires_Heart_Rate_Device": {
       "type": "boolean"
     },
-    "husslelocations": {
-      "collection": "husslelocation",
-      "via": "Workoutypes"
-    },
     "Circle_Icon": {
       "model": "file",
       "via": "related",
@@ -35,6 +31,10 @@
     "Trainers": {
       "model": "trainers",
       "via": "WorkoutSpecialties"
+    },
+    "husslelocations": {
+      "collection": "husslelocation",
+      "via": "Workoutypes"
     },
     "businesses": {
       "collection": "businesses",

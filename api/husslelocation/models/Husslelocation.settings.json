@@ -53,9 +53,6 @@
     "Geolocation_Polygon": {
       "type": "json"
     },
-    "Location_TopCategory": {
-      "model": "topcategoryoffers"
-    },
     "Location_Bonus": {
       "type": "integer"
     },
@@ -66,8 +63,14 @@
     },
     "Workoutypes": {
       "collection": "workoutypes",
-      "dominant": true,
-      "via": "husslelocations"
+      "via": "husslelocations",
+      "dominant": true
+    },
+    "BonusTimer_Minutes": {
+      "type": "integer"
+    },
+    "Location_Radius_Feet": {
+      "type": "integer"
     }
   }
 }
