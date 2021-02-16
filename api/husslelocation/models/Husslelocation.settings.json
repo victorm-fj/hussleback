@@ -50,7 +50,7 @@
     "Latitude": {
       "type": "float"
     },
-    "Geolocation_Polygon": {
+    "Location_Point": {
       "type": "json"
     },
     "Location_Bonus": {

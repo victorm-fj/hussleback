@@ -32,13 +32,13 @@
       "model": "trainers",
       "via": "WorkoutSpecialties"
     },
-    "husslelocations": {
-      "collection": "husslelocation",
-      "via": "Workoutypes"
-    },
     "businesses": {
       "collection": "businesses",
       "via": "workoutypes"
+    },
+    "husslelocations": {
+      "collection": "husslelocation",
+      "via": "Workoutypes"
     }
   }
 }
