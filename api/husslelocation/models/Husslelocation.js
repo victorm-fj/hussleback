@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Lifecycle callbacks for the `Husslelocation` model.
@@ -7,7 +7,19 @@
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  // beforeSave: async (model) => {},
+  beforeSave: async (model) => {
+    const long = Number(model.Longitude);
+    const lat = Number(model.Latitude);
+
+    if (long && lat) {
+      const point = {
+        type: "Point",
+        coordinates: [long, lat],
+      };
+
+      model.Location_Point = point;
+    }
+  },
 
   // After saving a value.
   // Fired after an `insert` or `update` query.
@@ -38,7 +50,19 @@ module.exports = {
 
   // Before updating a value.
   // Fired before an `update` query.
-  // beforeUpdate: async (model) => {},
+  beforeUpdate: async (model, x, y) => {
+    const long = Number(model._update.Longitude);
+    const lat = Number(model._update.Latitude);
+
+    if (long && lat) {
+      const point = {
+        type: "Point",
+        coordinates: [long, lat],
+      };
+
+      model._update.Location_Point = point;
+    }
+  },
 
   // After updating a value.
   // Fired after an `update` query.
